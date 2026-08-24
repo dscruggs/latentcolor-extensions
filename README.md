@@ -26,6 +26,13 @@ irm https://raw.githubusercontent.com/dscruggs/latentcolor-extensions/main/insta
 See [installation](docs/install.md), [compatibility](docs/compatibility.md),
 and [security](docs/security.md).
 
+## Agent marketplaces
+
+Codex uses `.agents/plugins/marketplace.json`; Claude Code uses
+`.claude-plugin/marketplace.json`; Cursor uses `.cursor-plugin/marketplace.json`.
+Each package carries the same CLI workflow and requires the separately installed
+CLI.
+
 ## License
 
 The installers, documentation, and plugin are [MIT licensed](LICENSE). This

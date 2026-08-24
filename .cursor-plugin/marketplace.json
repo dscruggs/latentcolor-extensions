@@ -1,0 +1,1 @@
+{"name":"latentcolor-extensions","owner":{"name":"LatentColor"},"metadata":{"description":"LatentColor CLI integrations."},"plugins":[{"name":"latentcolor-cli","source":"plugins/cursor/latentcolor-cli","description":"Use the installed LatentColor CLI to edit local images."}]}
