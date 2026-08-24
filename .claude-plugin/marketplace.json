@@ -1,1 +1,14 @@
-{"name":"latentcolor-extensions","owner":{"name":"LatentColor","url":"https://github.com/dscruggs/latentcolor-extensions"},"metadata":{"description":"LatentColor CLI integrations."},"plugins":[{"name":"latentcolor-cli","source":"./plugins/claude-code/latentcolor-cli","description":"Use the installed LatentColor CLI to edit local images."}]}
+{
+  "name": "latentcolor-extensions",
+  "owner": {
+    "name": "LatentColor",
+    "url": "https://github.com/dscruggs/latentcolor-extensions"
+  },
+  "description": "LatentColor agent integrations.",
+  "plugins": [
+    {
+      "name": "latentcolor-cli",
+      "source": "./plugins/latentcolor-cli"
+    }
+  ]
+}

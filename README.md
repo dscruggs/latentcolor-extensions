@@ -28,10 +28,20 @@ and [security](docs/security.md).
 
 ## Agent marketplaces
 
-Codex uses `.agents/plugins/marketplace.json`; Claude Code uses
-`.claude-plugin/marketplace.json`; Cursor uses `.cursor-plugin/marketplace.json`.
-Each package carries the same CLI workflow and requires the separately installed
-CLI.
+Codex, Claude Code, and Cursor each have a marketplace catalog at their
+documented repository location. All three point to the same
+`plugins/latentcolor-cli` package.
+
+The package contains one `skills/latentcolor/SKILL.md`, two shared presentation
+images, and only the three host-required manifests:
+
+- `.codex-plugin/plugin.json` for Codex and ChatGPT
+- `.claude-plugin/plugin.json` for Claude Code
+- `.cursor-plugin/plugin.json` for Cursor
+
+The manifests describe the same versioned package for their respective hosts;
+the workflow itself is defined once. The plugin requires the separately
+installed CLI.
 
 ## License
 

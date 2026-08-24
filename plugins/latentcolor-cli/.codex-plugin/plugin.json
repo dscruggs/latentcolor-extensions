@@ -1,6 +1,6 @@
 {
   "name": "latentcolor-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use the installed LatentColor CLI to edit images through the visible browser editor.",
   "author": {
     "name": "LatentColor"
@@ -17,6 +17,10 @@
     "developerName": "LatentColor",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": ["Improve this local image in LatentColor and export the result."]
+    "defaultPrompt": ["Improve this local image in LatentColor and export the result."],
+    "brandColor": "#0A84FF",
+    "composerIcon": "./assets/logo-dark.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo-dark.png"
   }
 }
