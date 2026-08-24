@@ -1,0 +1,20 @@
+{
+  "name": "latentcolor-extensions",
+  "interface": {
+    "displayName": "LatentColor extensions"
+  },
+  "plugins": [
+    {
+      "name": "latentcolor-cli",
+      "source": {
+        "source": "local",
+        "path": "./plugins/latentcolor-cli"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

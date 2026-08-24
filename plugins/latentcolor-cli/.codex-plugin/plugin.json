@@ -1,0 +1,22 @@
+{
+  "name": "latentcolor-cli",
+  "version": "0.1.0",
+  "description": "Use the installed LatentColor CLI to edit images through the visible browser editor.",
+  "author": {
+    "name": "LatentColor"
+  },
+  "homepage": "https://github.com/dscruggs/latentcolor-extensions",
+  "repository": "https://github.com/dscruggs/latentcolor-extensions",
+  "license": "MIT",
+  "keywords": ["image-editing", "local-cli", "photography"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LatentColor CLI",
+    "shortDescription": "Edit local images through the installed LatentColor CLI.",
+    "longDescription": "Guides Codex through safe image import, inspection, editing, and export using the separately installed LatentColor CLI and visible browser editor.",
+    "developerName": "LatentColor",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": ["Improve this local image in LatentColor and export the result."]
+  }
+}
