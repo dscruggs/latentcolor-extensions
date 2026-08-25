@@ -1,10 +1,10 @@
 {
   "name": "latentcolor",
   "owner": {
-    "name": "LatentColor"
+    "name": "latentcolor"
   },
   "metadata": {
-    "description": "LatentColor agent integrations."
+    "description": "latentcolor agent integrations."
   },
   "plugins": [
     {

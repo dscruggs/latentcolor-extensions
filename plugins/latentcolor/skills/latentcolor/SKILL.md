@@ -1,9 +1,9 @@
 ---
 name: latentcolor
-description: Edit, inspect, and export local images through the visible LatentColor browser editor using the installed standalone CLI. Use when the user asks to improve, color-grade, inspect, or export a local image with LatentColor.
+description: Edit, inspect, and export local images through the visible latentcolor browser editor using the installed standalone CLI. Use when the user asks to improve, color-grade, inspect, or export a local image with latentcolor.
 ---
 
-# LatentColor CLI
+# latentcolor CLI
 
 At the start of a task, verify the installed CLI:
 

@@ -1,7 +1,7 @@
 {
   "name": "latentcolor",
   "interface": {
-    "displayName": "LatentColor"
+    "displayName": "latentcolor"
   },
   "plugins": [
     {

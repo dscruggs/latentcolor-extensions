@@ -18,14 +18,25 @@ command -v curl >/dev/null && command -v tar >/dev/null || { echo 'curl and tar 
 if command -v shasum >/dev/null; then checksum='shasum -a 256'; elif command -v sha256sum >/dev/null; then checksum=sha256sum; else echo 'A SHA-256 tool is required.' >&2; exit 1; fi
 tmp=$(mktemp -d "${TMPDIR:-/tmp}/latentcolor-install.XXXXXX")
 trap 'rm -rf "$tmp"' EXIT HUP INT TERM
-if [ -n "$version" ]; then case "$version" in v*) tag=$version ;; *) tag="v$version" ;; esac; archive="latentcolor-${tag}-${os}-${arch}.tar.gz"; sums="latentcolor-${tag}-checksums.txt"; base="https://github.com/$repo/releases/download/$tag"; else archive="latentcolor-${os}-${arch}.tar.gz"; sums=checksums.txt; base="https://github.com/$repo/releases/latest/download"; fi
+if [ -n "$version" ]; then
+  case "$version" in v*) tag=$version ;; *) tag="v$version" ;; esac
+else
+  version=$(curl -fsSL "https://github.com/$repo/releases/latest/download/version.txt" | tr -d '\r\n')
+  case "$version" in
+    [0-9]*.[0-9]*.[0-9]*) tag="v$version" ;;
+    *) echo 'Latest release version is invalid.' >&2; exit 1 ;;
+  esac
+fi
+archive="latentcolor-${tag}-${os}-${arch}.tar.gz"
+sums=checksums.txt
+base="https://github.com/$repo/releases/download/$tag"
 curl -fsSL "$base/$sums" -o "$tmp/checksums.txt"
 curl -fsSL "$base/$archive" -o "$tmp/$archive"
 expected=$(awk -v name="$archive" '$2 == name { print $1 }' "$tmp/checksums.txt")
 actual=$(cd "$tmp" && $checksum "$archive" | awk '{print $1}')
 [ -n "$expected" ] && [ "$expected" = "$actual" ] || { echo 'Checksum verification failed.' >&2; exit 1; }
 tar -xzf "$tmp/$archive" -C "$tmp"
-[ -f "$tmp/latentcolor" ] || { echo 'Archive has no LatentColor executable.' >&2; exit 1; }
+[ -f "$tmp/latentcolor" ] || { echo 'Archive has no latentcolor executable.' >&2; exit 1; }
 mkdir -p "$destination"
 install -m 755 "$tmp/latentcolor" "$destination/latentcolor"
 echo "Installed $destination/latentcolor"

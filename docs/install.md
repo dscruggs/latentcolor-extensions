@@ -1,4 +1,4 @@
-# Install the LatentColor CLI
+# Install the latentcolor CLI
 
 The `latentcolor` CLI is a standalone executable. It opens the visible browser
 editor through a private loopback bridge and does not need Node.js, Python, or a
@@ -15,7 +15,7 @@ irm https://raw.githubusercontent.com/dscruggs/latentcolor-extensions/main/insta
 ```
 
 The Unix default is `$HOME/.local/bin`; Windows uses
-`%LOCALAPPDATA%\\Programs\\LatentColor`. Both installers print a PATH instruction
+`%LOCALAPPDATA%\\Programs\\latentcolor`. Both installers print a PATH instruction
 when required.
 
 ## Pinned version and direct archives
@@ -27,8 +27,9 @@ curl -LO https://raw.githubusercontent.com/dscruggs/latentcolor-extensions/main/
 sh install.sh --version 0.1.0 --install-dir "$HOME/bin"
 ```
 
-Every release provides a platform archive and checksum manifest. Verify the
-archive SHA-256 against the named checksum before extraction. Then run:
+Every release provides one versioned archive per supported platform, a
+checksum manifest, and a release manifest. The installers resolve the current
+release, download the matching archive, and verify its SHA-256 before extraction. Then run:
 
 ```sh
 latentcolor version --json

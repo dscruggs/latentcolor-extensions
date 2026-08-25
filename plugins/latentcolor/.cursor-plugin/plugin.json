@@ -1,9 +1,9 @@
 {
   "name": "latentcolor",
   "version": "0.1.2",
-  "description": "Use the installed LatentColor CLI to edit local images through the visible browser editor.",
+  "description": "Use the installed latentcolor CLI to edit local images through the visible browser editor.",
   "author": {
-    "name": "LatentColor"
+    "name": "latentcolor"
   },
   "logo": "assets/logo.png"
 }

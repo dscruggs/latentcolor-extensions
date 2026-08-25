@@ -1,10 +1,10 @@
 {
   "name": "latentcolor",
   "owner": {
-    "name": "LatentColor",
+    "name": "latentcolor",
     "url": "https://github.com/dscruggs/latentcolor-extensions"
   },
-  "description": "LatentColor agent integrations.",
+  "description": "latentcolor agent integrations.",
   "plugins": [
     {
       "name": "latentcolor",

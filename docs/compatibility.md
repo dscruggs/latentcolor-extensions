@@ -1,6 +1,6 @@
 # Compatibility
 
-A supported LatentColor workflow requires an operating system and CPU that can
+A supported latentcolor workflow requires an operating system and CPU that can
 run the CLI, a browser that can run the deployed editor, and support for the
 exact HTTPS-to-loopback connection used by the bridge.
 
