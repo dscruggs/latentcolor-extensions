@@ -1,6 +1,6 @@
 {
   "name": "latentcolor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use the installed LatentColor CLI to edit images through the visible browser editor.",
   "author": {
     "name": "LatentColor"
