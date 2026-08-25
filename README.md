@@ -8,21 +8,19 @@
 
 # latentcolor extensions
 
-[latentcolor](https://latentcolor.com) is a professional photo editor that runs
-in the browser. It is designed for local, desktop- and tablet-first work.
+[latentcolor](https://latentcolor.com) is a professional photo editor that runs locally in your browser. It offers a human-first UI alongside a full-featured programmatic interface for agents and scripts. 
+
+This repository distributes the `latentcolor` CLI and plugins for Codex, Claude Code, and Cursor. Together, they let you collaborate with your preferred coding agent to create photos you love.
+
+Currently everything is run locally on your computer (aside from any agents you choose to use). Future remote AI features will be optional, reserved for advanced workflows, and explicitly labeled. `latentcolor` does not collect or retain your image or usage data.
 
 Visit [latentcolor.com](https://latentcolor.com).
 
-Editing runs on your device. Remote AI features are used only when you choose
-them for advanced workflows. latentcolor does not collect or retain image data
-or usage data.
 
-This repository distributes the latentcolor CLI and plugins for Codex, Claude
-Code, and Cursor.
 
 ## Quick start
 
-1. Install the latentcolor CLI.
+1. Install the `latentcolor` CLI.
 2. Install the `latentcolor` plugin from your preferred agent's marketplace.
 3. Ask the agent to edit a local photo.
 
@@ -30,8 +28,7 @@ For example:
 
 > Make this photo look better with latentcolor.
 
-The agent opens latentcolor in your browser, where you can see the image and
-the result of each edit.
+The agent opens `latentcolor` in your browser, where you can see the image and the result of each edit.
 
 ## Install
 
@@ -50,9 +47,7 @@ verification.
 
 ## Agent plugins
 
-The `latentcolor` plugin is available for Codex, Claude Code, and Cursor. It
-teaches an agent how to open local images, inspect available commands, apply
-requested edits, and export results through latentcolor.
+The `latentcolor` plugin is available for Codex, Claude Code, and Cursor. It teaches an agent how to open local images, inspect available commands, apply requested edits, and export results through `latentcolor`.
 
 For Claude Code:
 
@@ -63,17 +58,11 @@ For Claude Code:
 
 ## CLI
 
-The `latentcolor` command starts a local process, opens the editor in your
-browser, and communicates with that browser session through an authenticated
-connection bound to `localhost`.
+The `latentcolor` command starts a local process, opens the editor in your browser, and communicates with that browser session through an authenticated connection bound to `localhost`.
 
-It reads image files from the paths you provide and writes exports to the paths
-you provide. The browser editor owns the document, edit history, rendering, and
-export.
+It reads image files from the paths you provide and writes exports to the paths you provide. The browser editor owns the document, edit history, rendering, and export.
 
-When an agent uses the CLI, the agent provider handles the prompt, file paths,
-and command output included in that agent's context under its own privacy
-settings.
+When an agent uses the CLI, the agent provider handles the prompt, file paths, and command output included in that agent's context under its own privacy settings.
 
 ```sh
 latentcolor open /absolute/path/photo.jpg --json
@@ -92,5 +81,4 @@ Use `inspect` and `commands` before applying an edit.
 
 ## License
 
-The installers, documentation, and plugin package are [MIT licensed](LICENSE).
-The latentcolor editor and CLI source are proprietary.
+The installers, documentation, and plugin package are [MIT licensed](LICENSE). The `latentcolor` editor and CLI source are proprietary.
