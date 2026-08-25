@@ -7,8 +7,8 @@
   "description": "LatentColor agent integrations.",
   "plugins": [
     {
-      "name": "latentcolor-cli",
-      "source": "./plugins/latentcolor-cli"
+      "name": "latentcolor",
+      "source": "./plugins/latentcolor"
     }
   ]
 }

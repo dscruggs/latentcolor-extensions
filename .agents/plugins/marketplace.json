@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "latentcolor-cli",
+      "name": "latentcolor",
       "source": {
         "source": "local",
-        "path": "./plugins/latentcolor-cli"
+        "path": "./plugins/latentcolor"
       },
       "policy": {
         "installation": "AVAILABLE",

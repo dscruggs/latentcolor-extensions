@@ -1,5 +1,5 @@
 {
-  "name": "latentcolor-cli",
+  "name": "latentcolor",
   "version": "0.1.1",
   "description": "Use the installed LatentColor CLI to edit images through the visible browser editor.",
   "author": {
@@ -11,7 +11,7 @@
   "keywords": ["image-editing", "local-cli", "photography"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "LatentColor CLI",
+    "displayName": "LatentColor",
     "shortDescription": "Edit local images through the installed LatentColor CLI.",
     "longDescription": "Guides Codex through safe image import, inspection, editing, and export using the separately installed LatentColor CLI and visible browser editor.",
     "developerName": "LatentColor",

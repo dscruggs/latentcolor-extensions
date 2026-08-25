@@ -30,7 +30,7 @@ and [security](docs/security.md).
 
 Codex, Claude Code, and Cursor each have a marketplace catalog at their
 documented repository location. All three point to the same
-`plugins/latentcolor-cli` package.
+`plugins/latentcolor` package.
 
 The package contains one `skills/latentcolor/SKILL.md`, two shared presentation
 images, and only the three host-required manifests:
