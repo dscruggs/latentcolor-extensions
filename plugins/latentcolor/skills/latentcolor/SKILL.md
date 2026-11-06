@@ -1,19 +1,26 @@
 ---
 name: latentcolor
-description: Edit, inspect, and export local images through the visible latentcolor browser editor using the installed standalone CLI. Use when the user asks to improve, color-grade, inspect, or export a local image with latentcolor.
+description: Edit, inspect, and export local images through the Latentcolor browser editor using the standalone CLI. Use when the user asks to work on a local image with Latentcolor or explicitly asks to install or update its CLI.
 ---
 
 # latentcolor CLI
 
-At the start of a task, verify the installed CLI:
+At the start of an editing task, verify the installed CLI:
 
 ```sh
 latentcolor version --json
 ```
 
-If it is missing or incompatible, direct the user to
-`https://github.com/dscruggs/latentcolor-extensions`. Do not compile, download,
-or replace a binary during an editing task.
+If the CLI is missing or incompatible, explain the setup requirement and
+offer to install it. An editing request alone does not authorize installation
+or an update.
+
+When the user explicitly requests installation or an update, follow the
+[official installation guide](https://github.com/dscruggs/latentcolor-extensions/blob/main/docs/install.md).
+Use the published installer for the computer that runs the browser editor.
+Verify setup with `latentcolor version --json` and resume any pending edit only
+after it succeeds. If setup cannot complete, explain what blocked it and
+share the installation guide.
 
 The CLI starts a private loopback bridge and connects the visible browser
 editor. The browser owns document state, history, rendering, decoding, and

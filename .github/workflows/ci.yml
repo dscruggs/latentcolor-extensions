@@ -28,3 +28,12 @@ jobs:
         run: |
           node scripts/check-distribution.mjs
           sh -n install.sh
+
+      - name: Validate PowerShell installer syntax
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $parseErrors = $null
+          [void][System.Management.Automation.Language.Parser]::ParseFile(
+            (Join-Path $PWD 'install.ps1'), [ref]$tokens, [ref]$parseErrors)
+          if ($parseErrors.Count -gt 0) { throw ($parseErrors -join [Environment]::NewLine) }

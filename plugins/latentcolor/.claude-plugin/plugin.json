@@ -1,7 +1,7 @@
 {
   "name": "latentcolor",
-  "version": "0.1.2",
-  "description": "Use the installed latentcolor CLI to edit local images through the visible browser editor.",
+  "version": "0.1.3",
+  "description": "Ask your agent to adjust exposure, grade color, or make selective edits in Latentcolor. See the changes in your browser and refine them with the same editing controls. Requires the Latentcolor CLI and a supported desktop browser.",
   "author": {
     "name": "latentcolor"
   }
