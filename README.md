@@ -33,7 +33,7 @@ The agent opens `latentcolor` in your browser, where you can see the image and t
 
 ### Ask your agent to install the Latentcolor plugin
 
-Paste this into a local Cursor, Claude Code, or Codex session.
+Paste this into a local session with your preferred agent.
 
 ```text
 Install the Latentcolor photo-editing plugin from
