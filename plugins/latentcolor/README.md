@@ -7,6 +7,12 @@ can see each change, adjust it yourself, and export when you are ready.
 
 ## Setup
 
+For Claude Code, install the plugin from a session:
+
+```text
+/plugin install latentcolor --marketplace dscruggs/latentcolor-extensions
+```
+
 Use an agent session on the same computer as a supported desktop browser.
 Install the [Latentcolor CLI](https://github.com/dscruggs/latentcolor-extensions/blob/main/docs/install.md)
 or explicitly ask your agent to install it. Verify it with

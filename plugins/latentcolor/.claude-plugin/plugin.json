@@ -1,8 +1,20 @@
 {
   "name": "latentcolor",
-  "version": "0.1.3",
-  "description": "Ask your agent to adjust exposure, grade color, or make selective edits in Latentcolor. See the changes in your browser and refine them with the same editing controls. Requires the Latentcolor CLI and a supported desktop browser.",
+  "version": "0.1.4",
+  "description": "Latentcolor is a professional photo editor that runs locally in your browser. The plugin lets your agent use the Latentcolor CLI to open photos, apply the edits you describe, and export the result. Review and fine-tune the edits in the same browser session. Requires a WebGPU-capable desktop browser.",
   "author": {
     "name": "latentcolor"
-  }
+  },
+  "homepage": "https://latentcolor.com",
+  "repository": "https://github.com/dscruggs/latentcolor-extensions",
+  "documentationUrl": "https://github.com/dscruggs/latentcolor-extensions/blob/main/docs/install.md",
+  "supportUrl": "https://latentcolor.com/contact",
+  "privacyPolicyUrl": "https://latentcolor.com/privacy",
+  "termsOfServiceUrl": "https://latentcolor.com/terms",
+  "icon": "./assets/logo.png",
+  "keywords": [
+    "photo-editing",
+    "photography",
+    "color-grading"
+  ]
 }

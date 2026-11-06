@@ -1,27 +1,37 @@
 {
   "name": "latentcolor",
-  "version": "0.1.3",
-  "description": "Ask your agent to adjust exposure, grade color, or make selective edits in Latentcolor. See the changes in your browser and refine them with the same editing controls. Requires the Latentcolor CLI and a supported desktop browser.",
+  "version": "0.1.4",
+  "description": "Latentcolor is a professional photo editor that runs locally in your browser. The plugin lets your agent use the Latentcolor CLI to open photos, apply the edits you describe, and export the result. Review and fine-tune the edits in the same browser session. Requires a WebGPU-capable desktop browser.",
   "author": {
     "name": "latentcolor"
   },
-  "homepage": "https://github.com/dscruggs/latentcolor-extensions",
+  "homepage": "https://latentcolor.com",
   "repository": "https://github.com/dscruggs/latentcolor-extensions",
   "license": "MIT",
-  "keywords": ["image-editing", "local-cli", "photography"],
+  "keywords": [
+    "photo-editing",
+    "color-grading",
+    "photography"
+  ],
   "skills": "./skills/",
   "requires_local_executor": true,
   "interface": {
     "displayName": "latentcolor",
     "shortDescription": "Pro photo editing for agents",
-    "longDescription": "Ask your agent to adjust exposure, grade color, or make selective edits in Latentcolor. See the changes in your browser and refine them with the same editing controls. Requires the Latentcolor CLI and a supported desktop browser.",
+    "longDescription": "Latentcolor is a professional photo editor that runs locally in your browser. The plugin lets your agent use the Latentcolor CLI to open photos, apply the edits you describe, and export the result. Review and fine-tune the edits in the same browser session. Requires a WebGPU-capable desktop browser.",
     "developerName": "latentcolor",
-    "category": "Productivity",
+    "category": "Creativity",
     "capabilities": [],
-    "defaultPrompt": ["Open this photo in Latentcolor, lift the shadows, and warm the highlights slightly."],
+    "defaultPrompt": [
+      "Open this photo in Latentcolor, lift the shadows, and warm the highlights slightly."
+    ],
     "brandColor": "#0A84FF",
     "composerIcon": "./assets/logo-dark.png",
     "logo": "./assets/logo.png",
-    "logoDark": "./assets/logo-dark.png"
+    "logoDark": "./assets/logo-dark.png",
+    "websiteURL": "https://latentcolor.com",
+    "supportURL": "https://latentcolor.com/contact",
+    "privacyPolicyURL": "https://latentcolor.com/privacy",
+    "termsOfServiceURL": "https://latentcolor.com/terms"
   }
 }
