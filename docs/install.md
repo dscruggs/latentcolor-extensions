@@ -15,8 +15,8 @@ irm https://raw.githubusercontent.com/dscruggs/latentcolor-extensions/main/insta
 ```
 
 The Unix default is `$HOME/.local/bin`; Windows uses
-`%LOCALAPPDATA%\\Programs\\latentcolor`. Both installers print a PATH instruction
-when required.
+`%LOCALAPPDATA%\\Programs\\latentcolor`. Add the install directory to your user
+`PATH` if your shell cannot find `latentcolor`.
 
 ## Pinned version and direct archives
 
@@ -35,5 +35,5 @@ release, download the matching archive, and verify its SHA-256 before extraction
 latentcolor version --json
 ```
 
-Install the CLI before an agent integration. Plugins contain instructions only;
-they never carry, compile, download, or replace a binary.
+The plugin uses the standalone CLI. You can install the CLI yourself or
+explicitly ask your agent to use the official installer before editing.

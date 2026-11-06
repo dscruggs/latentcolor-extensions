@@ -1,7 +1,7 @@
 {
   "name": "latentcolor",
-  "version": "0.1.2",
-  "description": "Use the installed latentcolor CLI to edit images through the visible browser editor.",
+  "version": "0.1.3",
+  "description": "Ask your agent to adjust exposure, grade color, or make selective edits in Latentcolor. See the changes in your browser and refine them with the same editing controls. Requires the Latentcolor CLI and a supported desktop browser.",
   "author": {
     "name": "latentcolor"
   },
@@ -10,14 +10,15 @@
   "license": "MIT",
   "keywords": ["image-editing", "local-cli", "photography"],
   "skills": "./skills/",
+  "requires_local_executor": true,
   "interface": {
     "displayName": "latentcolor",
-    "shortDescription": "Edit local images through the installed latentcolor CLI.",
-    "longDescription": "Guides Codex through safe image import, inspection, editing, and export using the separately installed latentcolor CLI and visible browser editor.",
+    "shortDescription": "Pro photo editing for agents",
+    "longDescription": "Ask your agent to adjust exposure, grade color, or make selective edits in Latentcolor. See the changes in your browser and refine them with the same editing controls. Requires the Latentcolor CLI and a supported desktop browser.",
     "developerName": "latentcolor",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": ["Improve this local image in latentcolor and export the result."],
+    "defaultPrompt": ["Open this photo in Latentcolor, lift the shadows, and warm the highlights slightly."],
     "brandColor": "#0A84FF",
     "composerIcon": "./assets/logo-dark.png",
     "logo": "./assets/logo.png",
