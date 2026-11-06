@@ -20,9 +20,8 @@ Visit [latentcolor.com](https://latentcolor.com).
 
 ## Quick start
 
-1. Install the `latentcolor` CLI.
-2. Install the `latentcolor` plugin from your preferred agent's marketplace.
-3. Ask the agent to edit a local photo.
+1. [Set up the Latentcolor plugin and CLI](#install) on the computer where you edit photos.
+2. Ask your agent to edit a local photo.
 
 For example:
 
@@ -32,29 +31,25 @@ The agent opens `latentcolor` in your browser, where you can see the image and t
 
 ## Install
 
-After the first public release:
+### Ask your agent to install Latentcolor
 
-```sh
-curl -LsSf https://raw.githubusercontent.com/dscruggs/latentcolor-extensions/main/install.sh | sh
-```
-
-```powershell
-irm https://raw.githubusercontent.com/dscruggs/latentcolor-extensions/main/install.ps1 | iex
-```
-
-See [installation](docs/install.md) for versioned installs and archive
-verification.
-
-## Agent plugins
-
-The `latentcolor` plugin is available for Codex, Claude Code, and Cursor. It teaches an agent how to open local images, inspect available commands, apply requested edits, and export results through `latentcolor`.
-
-For Claude Code:
+Paste this into a local Cursor, Claude Code, or Codex session.
 
 ```text
-/plugin marketplace add dscruggs/latentcolor-extensions
-/plugin install latentcolor@latentcolor
+Install the Latentcolor photo-editing plugin from
+https://github.com/dscruggs/latentcolor-extensions.
+
+If the Latentcolor CLI is missing, install it using the repository’s
+official installation guide and verify it with `latentcolor version --json`.
 ```
+
+### Install manually
+
+[Install the Latentcolor CLI](docs/install.md), then add the plugin from GitHub.
+
+- **Cursor.** In the desktop app, open **Customize → Plugins → Browse Marketplace → Add Marketplace → Import from GitHub**. Paste `https://github.com/dscruggs/latentcolor-extensions`, choose **User** scope, and install **latentcolor**. [Cursor plugin docs](https://cursor.com/docs/plugins#installing-plugins)
+- **Claude Code.** Run `/plugin marketplace add dscruggs/latentcolor-extensions`, then `/plugin install latentcolor@latentcolor` in a Claude Code session. [Claude Code plugin docs](https://code.claude.com/docs/en/discover-plugins#add-a-marketplace)
+- **Codex.** Run `codex plugin marketplace add dscruggs/latentcolor-extensions` in your terminal. In the ChatGPT desktop app, open **Plugins**, select the **latentcolor** marketplace, and install **latentcolor**. [Codex plugin docs](https://developers.openai.com/plugins/build/plugins#add-a-marketplace-from-the-cli)
 
 ## CLI
 
