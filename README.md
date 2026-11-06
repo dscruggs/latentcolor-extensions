@@ -31,7 +31,7 @@ The agent opens `latentcolor` in your browser, where you can see the image and t
 
 ## Install
 
-### Ask your agent to install Latentcolor
+### Ask your agent to install the Latentcolor plugin
 
 Paste this into a local Cursor, Claude Code, or Codex session.
 
