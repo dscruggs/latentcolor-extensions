@@ -11,5 +11,10 @@
   "supportUrl": "https://latentcolor.com/contact",
   "privacyPolicyUrl": "https://latentcolor.com/privacy",
   "termsOfServiceUrl": "https://latentcolor.com/terms",
-  "icon": "./assets/logo.png"
+  "icon": "./assets/logo.png",
+  "keywords": [
+    "photo-editing",
+    "photography",
+    "color-grading"
+  ]
 }
