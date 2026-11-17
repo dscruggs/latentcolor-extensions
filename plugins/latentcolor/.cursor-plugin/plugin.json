@@ -1,6 +1,6 @@
 {
   "name": "latentcolor",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Latentcolor is a professional photo editor that runs locally in your browser. The plugin lets your agent use the Latentcolor CLI to open photos, apply the edits you describe, and export the result. Review and fine-tune the edits in the same browser session. Requires a WebGPU-capable desktop browser.",
   "author": {
     "name": "latentcolor"
