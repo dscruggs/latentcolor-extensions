@@ -71,7 +71,6 @@ Use `inspect` and `commands` before applying an edit.
 ## Documentation
 
 - [Installation](docs/install.md)
-- [Review masks and select people](docs/masks.md)
 - [Compatibility](docs/compatibility.md)
 - [Security](docs/security.md)
 
