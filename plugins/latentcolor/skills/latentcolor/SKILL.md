@@ -51,24 +51,8 @@ A generic connection failure alone cannot identify the cause.
    installed command catalog lists it. Inspect the temporary PNG at the
    returned path. Mask preview leaves the document and history untouched.
 
-When the CLI help and catalog list person selection, use
-`latentcolor detect-people --file scope.json` with `{"scopeNodeId":"…"}`.
-At the returned revision, inspect the numbered candidates and their box
-overlaps. Use `preview-person --file candidate.json`
-with `{"reviewId":"…","candidate":1}` for each candidate you intend to apply.
-Optional `include` or `exclude` fields each take a stroke with `diameterPx` and
-normalized `points` with `x` and `y`. Review the refined PNG before applying.
-
-Use `apply-people --file selection.json` with
-`{"reviewId":"…","candidates":[1,2]}` for the reviewed candidates in scope.
-Pass `--json` and the same `--expect` revision to each preview and the apply
-call. A new detection or document revision can invalidate the review.
-Check `result.complete` and every `result.items` status. Report applied or failed
-candidates, and call out unresolved subjects or overlapping detection boxes. Box overlap and detection scores describe candidate boxes,
-while the PNG shows the mask coverage.
-
 Use `export --temporary --json` for general rendered review. Write a persistent
 export only when the user requests one. Keep bridge credentials and raw command
 dumps out of model context. Inspect history before retrying after a transport
-failure or an `adopted-unconfirmed` result. The browser owns document state, history,
-rendering, decoding, and export encoding.
+failure. The browser owns document state, history, rendering, decoding, and
+export encoding.
